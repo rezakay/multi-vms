@@ -35,7 +35,7 @@ Vagrant.configure(2) do |config|
    db.vm.hostname = "database-server"
 
    #private network for web and db servers communication
-   db.vm.network "private_network", ip: "192.168.10.2"
+   db.vm.network "private_network", ip: "192.168.10.3"
 
    db.vm.provision "shell" , path: "https://raw.githubusercontent.com/rezakay/vagrant/master/scripts/ubuntu-db.sh"
   
